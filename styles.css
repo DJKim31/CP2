@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+article {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,
+p,
+button {
+    font-family: 'Playfair Display', serif;
+    color: #DDA0DD;
+}
+
+#mainHeader {
+    font-size: 5rem;
+    margin-top: 0rem;
+}
+
+#buttonHolder {
+    margin-top: 2rem;
+}
+
+button {
+    width: 9rem;
+    margin: .3rem;
+    font-size: medium;
+    background-color: #FFC0CB;
+    border: none;
+    color: white;
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+#quoteHolder {
+    width: 100%;
+    min-height: 8rem;
+    padding: 1rem 2rem;
+    border-color: #FFB6C1;
+    border-radius: 1rem;
+    border-width: medium;
+    border-style: solid;
+}
+
+#quoteText {
+    font-size: larger;
+    margin-top: 0;
+}
+
+#quoteAuthor {
+    font-size: large;
+    margin-bottom: 0;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: fit-content;
+    width: 100%;
+    background-color: #FFB6C1;
+    flex-shrink: 0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    article {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #mainHeader {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #quoteHolder {
+        width: 80%;
+    }
+
+    button {
+        box-sizing: border-box;
+        width: 100%;
+        margin: .5rem 0rem;
+    }
+}
